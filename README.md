@@ -3,31 +3,48 @@
 # README
 
 Author：Zhiyi Hong
+
 YouTube Link: 
+
 Background Video link: https://www.youtube.com/watch?v=q2l-E91v7Rk
 
 # The game rules: 
 
 In this game, the goal of the intelligent agent (Jie Ge) is to discover the shortest path from the starting point (Jie Ge's initial position) to the ending point (Ah Wei's position) while avoiding collision with obstacles. 
+
 ![image](https://github.com/user-attachments/assets/d90979f5-4519-4ce7-8a77-42fa8d211408)
+
 The final shortest path:
+
 ![image](https://github.com/user-attachments/assets/6d5b669a-edaa-4828-ba46-6e98b88ab954)
 
 # Game environment: 
+
 The maze is composed of a two-dimensional grid, which includes passable positions (white grid), obstacles (pink grid), starting point (Jie Ge's initial position), and ending point (Ah Wei's position).
+
 The agent can choose four directions to move: Up, Down, Left, and Right.
+
 The current position of the intelligent agent is represented by row and column coordinates.
+
 Run main.exe to start the game。
 
 # Reward function :
+
 The reward mechanism is as follows:
+
 Reaching the finish line (Ah Wei's position): Reward+100.
+
 Encountering obstacles: Punishment -100.
+
 Each move: Punish -1 (encourages quick path finding).
+
 The goal of agent is to learn how to make optimal actions through interaction with the environment, in order to maximize future cumulative rewards.
 
+
 # Q-Learning and the ε-growth strategy
+
 When selecting actions, algorithms have a certain probability (ε) to choose a random action (exploration) in order to discover new combinations of states and actions.
+
 On the other hand, using probability (1- ε) to select the currently known optimal action (utilization), that is, selecting the action corresponding to the maximum Q value of the current state from the Q table.
 
 
