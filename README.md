@@ -14,9 +14,15 @@ In this game, the goal of the intelligent agent (Jie Ge) is to discover the shor
 
 ![image](https://github.com/user-attachments/assets/d90979f5-4519-4ce7-8a77-42fa8d211408)
 
-The final shortest path:
+After reinforcement learning training, Jie Ge found the shortest path.The final shortest path:
 
 ![image](https://github.com/user-attachments/assets/6d5b669a-edaa-4828-ba46-6e98b88ab954)
+
+At the end, the system will pop up a prompt::
+
+![image](https://github.com/user-attachments/assets/f3b602a1-78e1-4fec-aee9-6f9a7b300086)
+
+When the agent touches the pink grid or reaches the finish line(Ah Wei’s position), it will reset the game to the next round. In the game, the agent will conduct 2250 rounds.
 
 # Game environment: 
 
@@ -26,7 +32,7 @@ The agent can choose four directions to move: Up, Down, Left, and Right.
 
 The current position of the intelligent agent is represented by row and column coordinates.
 
-Run main.exe to start the game。
+## Run main.exe to start the game。
 
 # Reward function :
 
@@ -48,7 +54,7 @@ When selecting actions, algorithms have a certain probability (ε) to choose a r
 On the other hand, using probability (1- ε) to select the currently known optimal action (utilization), that is, selecting the action corresponding to the maximum Q value of the current state from the Q table.
 
 
-## Tools Overview
+# Tools Overview
 
 1. **Python**
 
