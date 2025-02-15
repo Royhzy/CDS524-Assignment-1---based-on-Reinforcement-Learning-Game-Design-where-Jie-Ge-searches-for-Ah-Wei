@@ -71,5 +71,5 @@ When the episodes reach 117 times, the agent found the path to the destination f
 
 In the following rounds, the agent will find the path faster and faster.
 
-When the episodes reach 2232 times, the agent can stably find the target endpoint position through the shortest path: 
+When the episodes reach 2232 times, the agent can stably find the target endpoint position through the shortest path.
 
